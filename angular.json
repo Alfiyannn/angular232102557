@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular232102586": {
+    "angular232102557": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular232102586:build:production"
+              "buildTarget": "angular232102557:build:production"
             },
             "development": {
-              "buildTarget": "angular232102586:build:development"
+              "buildTarget": "angular232102557:build:development"
             }
           },
           "defaultConfiguration": "development"
