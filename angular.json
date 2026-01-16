@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular232102557": {
+    "angular232102547": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,7 +25,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/leaflet/dist/leaflet.css"
             ]
           },
           "configurations": {
@@ -57,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular232102557:build:production"
+              "buildTarget": "angular232102547:build:production"
             },
             "development": {
-              "buildTarget": "angular232102557:build:development"
+              "buildTarget": "angular232102547:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +84,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/leaflet/dist/leaflet.css"
             ]
           }
         }

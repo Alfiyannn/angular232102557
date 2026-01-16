@@ -14,7 +14,7 @@
         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">232102557 ALFIYAN</a>
+        <a href="#" class="d-block">{{ username }}</a>
       </div>
     </div>
 
@@ -145,6 +145,26 @@
               </a>
             </li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/forex']" routerLinkActive="router-link-active"
+            class="nav-link {{ moduleName == 'forex' ? 'active' : '' }}">
+            <i class="fas fa-money-bill-alt nav-icon"></i>
+            <p>Forex</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/cuaca']" routerLinkActive="router-link-active"
+            class="nav-link {{ moduleName == 'cuaca' ? 'active' : '' }}">
+            <i class="nav-icon fas fa-cloud-rain"></i>
+            <p>Cuaca</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" (click)="toggleTheme(); $event.preventDefault()">
+            <i class="nav-icon fas fa-adjust"></i>
+            <p>Light/Dark Mode</p>
+          </a>
         </li>
         <li class="nav-item">
           <a href="#" class="nav-link">
@@ -677,6 +697,12 @@
           <a href="#" class="nav-link">
             <i class="nav-icon far fa-circle text-info"></i>
             <p>Informational</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/logout']" routerLinkActive="router-link-active" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>logout</p>
           </a>
         </li>
       </ul>
